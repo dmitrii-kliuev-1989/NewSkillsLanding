@@ -1,0 +1,11 @@
+:root {
+    -f--bold: 'OSBold';
+    -f--reg: 'OSReg';
+    -f--light: 'OSLight';
+
+    
+
+
+    --c-white: white;
+    --c-black: black;
+}
