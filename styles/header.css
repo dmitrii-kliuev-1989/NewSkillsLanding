@@ -1,25 +1,26 @@
-@import './variables.css';
+.header {
+  grid-area: header;
+  min-height: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 33px 0 33px 0;
-  }
-  
-  a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--c-black);
-    margin-right: 60px;
-    font-family: var(-f--bold);
-  }
-  
-  a:last-child {
-    margin-right: 0;
-  }
-  
-  .header_title {
-    font-size: 22px;
-    font-weight: bold;
-  }
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 520px;
+  width: 100%;
+}
+
+.header__navigationLink {
+  text-decoration: none;
+  color: var(--c-midnight);
+  font-family: var(--f-bold);
+  font-size: 16px;
+}
+
+.header__tagline {
+  font-family: var(--f-bold);
+  font-size: 22px;
+}

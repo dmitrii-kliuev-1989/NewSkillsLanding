@@ -1,11 +1,17 @@
 :root {
-    -f--bold: 'OSBold';
-    -f--reg: 'OSReg';
-    -f--light: 'OSLight';
+    --f-bold: 'OSBold';
+    --f-reg: 'OSReg';
+    --f-light: 'OSLight';
+    --f-natural: 'Natural';
 
-    
+    --c-midnight: #001A34;
 
+    --c-white: #FFF;
+    --c-ozon-blue: #005BFF;
 
-    --c-white: white;
-    --c-black: black;
+    --c-mystic:  #dee5de;
+
+    --c-dark-space: #667585;
+
+    --c-kadet-blue: #B2BAC2;
 }
