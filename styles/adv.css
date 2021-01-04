@@ -1,0 +1,52 @@
+.adv {
+  grid-area: adv;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0;
+}
+
+.adv__title {
+  margin: 0 0 64px 0;
+  letter-spacing: 0.8px;
+  font-size: 46px;
+  line-height: 54px;
+}
+
+.adv__container {
+  display: flex;
+  justify-content: center;
+}
+
+.adv__item {
+  width: 240px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adv__item:last-child {
+  margin-right: 0;
+}
+
+.adv__itemImage {
+  width: 72px;
+  height: 56px;
+}
+
+.adv__infoTitle {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.6px;
+  margin: 24px 0 16px;
+}
+
+.adv__infoText {
+  text-align: center;
+  font-family: var(--f-light);
+  letter-spacing: 0.4px;
+  font-size: 18px;
+  line-height: 26px;
+}

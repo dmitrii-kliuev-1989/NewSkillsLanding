@@ -2,7 +2,10 @@
 @import 'header.css';
 @import 'font.css';
 @import 'hero.css';
+@import 'courses.css';
+@import 'heroSecond.css';
 @import 'common.css';
+@import 'adv.css';
 
 body {
   margin: 0;
@@ -18,6 +21,7 @@ body {
   '. heroMain .'
   '. courses .'
   '. heroSecond .'
+  '. adv .'
   'request request request';
   grid-template-columns: 92px 1fr 92px;
   font-family: var(--f-reg); 

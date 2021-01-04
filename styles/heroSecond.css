@@ -1,0 +1,6 @@
+.hero--second {
+  grid-area: heroSecond;
+  display: flex;
+  background-image: url(../images/hero-second-image.png);
+  justify-content: flex-end;
+}
