@@ -6,6 +6,8 @@
 @import 'heroSecond.css';
 @import 'common.css';
 @import 'adv.css';
+@import 'request.css';
+@import 'footer.css';
 
 body {
   margin: 0;
@@ -22,7 +24,8 @@ body {
   '. courses .'
   '. heroSecond .'
   '. adv .'
-  'request request request';
+  'request request request'
+  'footer footer footer';
   grid-template-columns: 92px 1fr 92px;
   font-family: var(--f-reg); 
   color: var(--c-midnight);

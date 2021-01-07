@@ -1,0 +1,29 @@
+.footer {
+  grid-area: footer;
+  height: 220px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 92px 81px;
+  align-items: center;
+}
+
+.footer__text {
+  min-width: 432px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(-c-midnight);
+}
+
+.footer__social{
+  display: flex;
+  justify-content: space-between;
+  width: 181px;
+}
+
+.footer__socialIcon {
+  width: 37.45px;
+  height: 37.45px;
+}
