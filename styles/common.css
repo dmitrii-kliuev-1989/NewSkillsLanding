@@ -1,13 +1,19 @@
 .button {
-    padding: 0 32px;
-    height: 64px;
-    background: var(--c-ozon-blue);
-    color: var(--c-white);
-    font-family: var(--f-reg);
-    font-size: 22px;
-    line-height: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    outline: none;
+  padding: 0 32px;
+  height: 64px;
+  background: var(--c-ozon-blue);
+  color: var(--c-white);
+  font-family: var(--f-reg);
+  font-size: 22px;
+  line-height: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 360px) {
+  .button {
+    font-size: 18px;
   }
+}

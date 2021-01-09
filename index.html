@@ -9,8 +9,9 @@
   </head>
   <body>
     <div class="mainWrapper">
+
         <header class="header">
-          <img src="./images/Logo.svg" alt="Logo" />
+          <img class="header__mainLogoImage" src="./images/Logo.svg" alt="Logo" />
 
           <div class="header__navigation">
             <a href="#" class="header__navigationLink">Бизнес-аналитика</a>
@@ -19,11 +20,18 @@
           </div>
 
           <div class="header__tagline">Это вам не Школа!</div>
+
+          <img class="menuButton" src="images/menuButton.svg" alt="">
         </header>
 
         <section class="hero hero--main">
+          <div class="hero__imageWrapper">
+            <img class="hero__image" src="images/hero-main-image-small.jpg" alt="hero_small"/>
+            <div class="hero__gradient hero__mainGradient"></div>
+          </div>
+
           <div class="hero__info">
-            <h2 class="hero_infoTitle">Ozon New Skills</h2>
+            <h2 class="hero__infoTitle">Ozon New Skills</h2>
             <div class="hero__infoText">
               Поможем получить и прокачать навыки,
               которые будут полезны в текущей карьере
@@ -36,41 +44,52 @@
           <h2 class="courses__title">Наши курсы</h2>
 
           <div class="courses__container">
-            <div class="courses__item">
-              <img src="images/course_1.png" alt="course_1" class="courses__image">
-              <div class="courses__itemInfo">
-                <h4 class="courses__itemTitle">Бизнес-аналитика</h4>
-                <div class="courses__itemText">Изучение основных инструментов и механизмов бизнес-аналитики</div>
-                <a href="#" class="courses__itemLink">Узнать больше</a>
+            <div class="courses__scroll">
+              <div class="courses__item">
+                <div class="courses_imageWrapper">
+                  <img src="images/course_1.png" alt="course_1" class="courses__image">
+                </div>
+                <div class="courses__itemInfo">
+                  <div class="courses__itemTitle">Бизнес-аналитика</div>
+                  <div class="courses__itemText">Изучение основных инструментов и механизмов бизнес-аналитики</div>
+                  <a href="#" class="courses__itemLink">Узнать больше</a>
+                </div>
               </div>
-            </div>
-            <div class="courses__item">
-              <img src="images/course_2.png" alt="course_2" class="courses__image">
-              <div class="courses__itemInfo">
-                <h4 class="courses__itemTitle">Python 18+</h4>
-                <div class="courses__itemText">Основы программирования и знакомство с возможностями языка Python</div>
-                <a href="#" class="courses__itemLink">Узнать больше</a>
+              <div class="courses__item">
+                <div class="courses_imageWrapper">
+                  <img src="images/course_2.png" alt="course_2" class="courses__image">
+                </div>
+                <div class="courses__itemInfo">
+                  <div class="courses__itemTitle">Python 18+</div>
+                  <div class="courses__itemText">Основы программирования и знакомство с возможностями языка Python</div>
+                  <a href="#" class="courses__itemLink">Узнать больше</a>
+                </div>
               </div>
-            </div>
-            <div class="courses__item">
-              <img src="images/course_3.png" alt="course_3" class="courses__image">
-              <div class="courses__itemInfo">
-                <h4 class="courses__itemTitle">Frontend-разработчик</h4>
-                <div class="courses__itemText">Курс для новичков, которые хотят начать свой путь в Frontend-разработке</div>
-                <a href="#" class="courses__itemLink">Узнать больше</a>
+              <div class="courses__item">
+                <div class="courses_imageWrapper">
+                  <img src="images/course_3.png" alt="course_3" class="courses__image">
+                </div>
+                <div class="courses__itemInfo">
+                  <div class="courses__itemTitle">Frontend-разработчик</div>
+                  <div class="courses__itemText">Курс для новичков, которые хотят начать свой путь в Frontend-разработке</div>
+                  <a href="#" class="courses__itemLink">Узнать больше</a>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         <section class="hero hero--second">
+          <div class="hero__imageWrapper">
+            <img class="hero__image" src="images/hero-second-image-small.jpg" alt="hero_second_small"/>
+            <div class="hero__gradient hero__secondGradient"></div>
+          </div>
+
           <div class="hero__info">
-            <h2 class="hero_infoTitle">Сложно определиться?</h2>
+            <h2 class="hero__infoTitle">Сложно определиться?</h2>
             <div class="hero__infoText">
               Оставьте контактные данные
-              <br/>
               и наши специалисты помогут понять,
-              <br/>
               что вам ближе.</div>
               <button class="button">Оставить заявку</button>
           </div>
@@ -78,37 +97,42 @@
 
         <section class="adv">
           <h2 class="adv__title">Преимущества</h2>
-          <div class="adv__container">
 
-            <div class="adv__item">
-              <img class="adv__itemImage" src="images/cup.svg" alt="cup">
-              <div class="adv__info">
-                <h4 class="adv__infoTitle">Лидерство</h4>
-                <div class="adv__infoText">Образовательный проект от лидера российского 
-                  <br/>
-                  e-com</div>
+
+          <div class="adv__container">
+            <div class="adv__scroll">
+
+              <div class="adv__item">
+                <img class="adv__itemImage" src="images/cup.svg" alt="cup">
+                <div class="adv__info">
+                  <h4 class="adv__infoTitle">Лидерство</h4>
+                  <div class="adv__infoText">Образовательный проект от лидера российского 
+                    <br/>
+                    e-com</div>
+                </div>
               </div>
-            </div>
-            <div class="adv__item">
-              <img class="adv__itemImage" src="./images/expert.svg" alt="expert">
-              <div class="adv__info">
-                <h4 class="adv__infoTitle">Экспертиза</h4>
-                <div class="adv__infoText">Преподаватели с уникальным опытом</div>
+              <div class="adv__item">
+                <img class="adv__itemImage" src="./images/expert.svg" alt="expert">
+                <div class="adv__info">
+                  <h4 class="adv__infoTitle">Экспертиза</h4>
+                  <div class="adv__infoText">Преподаватели с уникальным опытом</div>
+                </div>
               </div>
-            </div>
-            <div class="adv__item">
-              <img class="adv__itemImage" src="./images/clock.svg" alt="clock">
-              <div class="adv__info">
-                <h4 class="adv__infoTitle">Актуальность</h4>
-                <div class="adv__infoText">Погружение в мир современных профессий</div>
+              <div class="adv__item">
+                <img class="adv__itemImage" src="./images/clock.svg" alt="clock">
+                <div class="adv__info">
+                  <h4 class="adv__infoTitle">Актуальность</h4>
+                  <div class="adv__infoText">Погружение в мир современных профессий</div>
+                </div>
               </div>
-            </div>
-            <div class="adv__item">
-              <img class="adv__itemImage" src="./images/human.svg" alt="human">
-              <div class="adv__info">
-                <h4 class="adv__infoTitle">Кураторы</h4>
-                <div class="adv__infoText">Поддержка преподавателя и куратора на всех этапах обучения</div>
+              <div class="adv__item">
+                <img class="adv__itemImage" src="./images/human.svg" alt="human">
+                <div class="adv__info">
+                  <h4 class="adv__infoTitle">Кураторы</h4>
+                  <div class="adv__infoText">Поддержка преподавателя и куратора на всех этапах обучения</div>
+                </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -140,13 +164,13 @@
             <input type="text" class="request__formItem request__comment" placeholder="Комментарий">
           </form>
 
-          <button class="button">Отправить заявку</button>
+          <button class="button request__button">Отправить заявку</button>
         </section>
 
         <footer class="footer">
           <div class="footer__content">
-            <img src="./images/Logo.svg" alt="Logo" />
-
+            <img class="footer__logo" src="./images/Logo.svg" alt="Logo" />
+            <div class="footer__tagline">Это вам не Школа!</div>
             <div class="footer__text">© 2019 ООО «Интернет Решения». Все права защищены.
               <br/>
               Москва, Пресненская наб., 10, блок С

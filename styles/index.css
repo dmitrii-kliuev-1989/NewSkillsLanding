@@ -1,32 +1,44 @@
-@import 'variables.css';
-@import 'header.css';
-@import 'font.css';
-@import 'hero.css';
-@import 'courses.css';
-@import 'heroSecond.css';
-@import 'common.css';
-@import 'adv.css';
-@import 'request.css';
-@import 'footer.css';
+@import "variables.css";
+@import "header.css";
+@import "font.css";
+@import "hero.css";
+@import "courses.css";
+@import "common.css";
+@import "adv.css";
+@import "request.css";
+@import "footer.css";
+
+.mainWrapper {
+  --side-gap: 245px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    ". header ."
+    ". heroMain ."
+    ". courses ."
+    ". heroSecond ."
+    ". adv ."
+    "request request request"
+    "footer footer footer";
+  grid-template-columns: var(--side-gap) 1fr var(--side-gap);
+  font-family: var(--f-reg);
+  color: var(--c-midnight);
+}
+
+@media (max-width: 1700px) {
+  .mainWrapper {
+    --side-gap: 46px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mainWrapper {
+    --side-gap: 0;
+  }
+}
 
 body {
   margin: 0;
-}
-
-.mainWrapper {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-areas: 
-  '. header .'
-  '. heroMain .'
-  '. courses .'
-  '. heroSecond .'
-  '. adv .'
-  'request request request'
-  'footer footer footer';
-  grid-template-columns: 92px 1fr 92px;
-  font-family: var(--f-reg); 
-  color: var(--c-midnight);
+  padding: 0;
 }

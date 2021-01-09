@@ -1,16 +1,10 @@
 .request {
   grid-area: request;
-  height: 956px;
   background-color: var(--c-aqua-haze);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.request__form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 64px;
+  padding-bottom: 80px;
 }
 
 .request__title {
@@ -22,10 +16,16 @@
   letter-spacing: 0.8px;
 }
 
+.request__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+  width: 456px;
+}
+
 .request__formItem {
   margin-bottom: 32px;
   border: 1px solid var(--c-kadet-blue);
-  width: 456px;
   border-radius: 6px;
   padding: 16px 20px;
   font-size: 18px;
@@ -46,7 +46,6 @@
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
-  width: 100%;
   height: 56px;
   padding: 16px 20px;
   border: 1px solid var(--c-kadet-blue);
@@ -97,4 +96,26 @@
 
 .select__dropdownItem:hover {
   background-color: var(--c-ozon-blue-10);
+}
+
+@media (max-width: 520px) {
+  .request {
+    padding: 0 16px 0;
+    height: 100%;
+  }
+
+  .request__title {
+    padding: 56px 0 36px;
+    font-size: 35px;
+  }
+
+  .request__form {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 36px;
+  }
+
+  .request__button{
+    margin-bottom: 56px;
+  }
 }
