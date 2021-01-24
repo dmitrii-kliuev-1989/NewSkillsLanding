@@ -79,6 +79,13 @@
   overflow-y: auto;
 }
 
+.request__formItem:focus {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 300ms linear;
+}
+
 .select__icon--opened {
   transform: rotate(180deg);
 }

@@ -12,6 +12,37 @@
   outline: none;
 }
 
+.hero__mainButton:hover {
+  transition: box-shadow 100ms linear;
+  box-shadow: 0 0 20px white;
+
+  animation: lightning 500ms ease-out;
+}
+
+.hero__secondButton:hover {
+  transition: box-shadow 100ms linear;
+  box-shadow: 0 0 40px var(--c-geyser);
+
+  animation: lightning 500ms ease-out;
+}
+
+.request__button:hover {
+  transition: box-shadow 100ms linear;
+  box-shadow: 0 0 40px var(--c-dark-space);
+
+  animation: lightning 500ms ease-out;
+}
+
+@keyframes lightning {
+  0% {
+    background: rgb(219, 219, 219);
+  }
+
+  100% {
+    background: var(--c-ozon-blue);
+  }
+}
+
 @media (max-width: 360px) {
   .button {
     font-size: 18px;
